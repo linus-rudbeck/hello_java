@@ -17,7 +17,7 @@ jobs:
       - name: Build with Maven
         run: mvn -B package --file pom.xml
       - name: Run program
-        run: java -cp target/my-app-1.0-SNAPSHOT.jar com.example.myapp.App > output.log
+        run: java -cp target/hello_java-1.0-SNAPSHOT.jar se.distansakademin.Main > output.log
       - name: Upload output log
         uses: actions/upload-artifact@v2
         with:
